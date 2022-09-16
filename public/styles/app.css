@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-Regular.ttf') format('ttf')
+}
+
+
+p{
+  line-height: 24px;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*! в задании написан 'Nunito' а  на макете 'sans-serif' */
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+h1{
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: inherit;
+}
+.m20{
+  margin: 20px;
+}
+.m0{
+  margin: 0;
+}
+.mt50{
+  margin-top:50px;
+}
+.mb50{
+  margin-bottom: 50px;
+  overflow: auto;
+}
+.pl10{
+  padding-left: 10px;
+}
+.pt140{
+  padding-top: 140px;
+}
+#yellow{
+  color: #f4e041;
+}
+
+#blue{
+  color: #00bdd3;
+}
+
+#light-gray{
+  color: #f8f8f8;
+}
+
+.y_btn{
+  background-color: #f4e041;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  cursor : pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 80px;
+}
+
+.y_btn:hover{
+  background-color: #f4e041;
+}
+
+.y_btn:disabled{
+  background-color: #b4b4b4;
+  color: #e5e5e5;
+}
+.grey{
+  color: #a1a1a1;
+  filter: contrast(100%)
+}
+
+.error-text{
+  color: red;
+  float: left;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #00bdd3;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

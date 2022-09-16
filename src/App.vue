@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <HeaderComponent/>
+    <SlideComponent/>
+    <MainComponent />
+    <FormComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainComponent from './components/MainComponent.vue'
+import HeaderComponent from "@/components/HeaderComponent";
+import SlideComponent from "@/components/SlideComponent";
+import FormComponent from "@/components/FormComponent";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    MainComponent,
+    SlideComponent,
+    FormComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 auto;
+  max-width: 1024px;
+  min-width: 360px;
 }
 </style>
